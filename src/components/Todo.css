@@ -109,3 +109,81 @@
     display: block;
 }
 
+@media(max-width:565px){
+    .container h1{
+        font-size: 40px;
+    }
+    .sub-container .addItems{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .addItems input {
+        width: 300px;
+        padding: 20px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+}
+
+@media(max-width:475px){
+
+    .container h1{
+        font-size: 40px;
+    }
+    .sub-container .addItems{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .addItems input {
+        width: 200px;
+        padding: 25px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    .container .addItems input::placeholder{
+        font-size: 15px;
+
+    }
+}
+
+@media(max-width:400px){
+
+    .container h1{
+        font-size: 20px;
+    }
+    .sub-container .addItems{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .addItems input {
+        width: 150px;
+        padding: 15px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    .container .addItems input::placeholder{
+        font-size: 10px;
+
+    }
+
+    .container .addItems button{
+        font-size: 18px;
+        padding: 15Px;
+    }
+}
+
+
