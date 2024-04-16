@@ -1,0 +1,111 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family:  sans-serif;
+}
+
+.container h1{
+ font-size: 60px;
+}
+
+.sub-container{
+    padding: 20px;
+    box-shadow: 1px 1px 19px 4px violet;
+    border-radius: 5px;
+}
+
+ .showItem .eachItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25px;
+    margin-left: 20px;
+}
+.container .addItems input{
+    width: 400px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.container .addItems input::placeholder{
+    font-size: 20px;
+    color: gray;
+
+}
+
+.container .addItems i{
+    background: #fff;
+    color: gray;
+    padding: 22px;
+
+}
+
+.container .addItems button{
+    background: #007bff;
+    color: #fff;
+    font-size: 22px;
+    padding: 19Px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.showItem{
+    background: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    color: gray;
+    margin-top: 20px;
+    max-height: 300px;
+    box-shadow: 1px 1px 19px 4px violet;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.showItem .eachItem{
+    margin-top: 20px;
+}
+
+
+.showItem .eachItem .todo-btn i{
+    color: red;
+}
+
+.showItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.showItems button{
+    background: #007bff;
+    color: #fff;
+    font-size: 18px;
+    padding: 14Px;
+    width: 150px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.showItems:hover .defaultText{
+    display: none;
+}
+
+.showItems .hoverText{
+    display: none;
+}
+
+.showItems:hover .hoverText{
+    display: block;
+}
+
