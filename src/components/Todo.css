@@ -65,8 +65,9 @@
     margin-top: 20px;
     max-height: 300px;
     box-shadow: 1px 1px 19px 4px violet;
-    overflow: hidden;
-    overflow-y: scroll;
+    overflow: auto;
+    width: 525px;
+    overflow: auto;
 }
 
 .showItem .eachItem{
@@ -97,16 +98,16 @@
     cursor: pointer;
 }
 
-.showItems:hover .defaultText{
+.showItems button:hover .defaultText{
     display: none;
 }
 
-.showItems .hoverText{
+.showItems button .hoverText{
     display: none;
 }
 
-.showItems:hover .hoverText{
-    display: block;
+.showItems button:hover .hoverText{
+    display: inline;
 }
 
 @media(max-width:565px){
