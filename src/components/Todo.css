@@ -110,81 +110,181 @@
     display: inline;
 }
 
-@media(max-width:565px){
-    .container h1{
-        font-size: 40px;
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px){
+    .container h1 {
+        font-size: 55px;
     }
-    .sub-container .addItems{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
+    .sub-container {
+        padding: 15px;
+        margin-right: 10px;
     }
 
     .container .addItems input {
-        width: 300px;
-        padding: 20px;
-        border: none;
-        outline: none;
-        border-radius: 5px;
+        width: 355px;
+        padding: 15px;
+        font-size: 15px;
+        margin-left: 30px;
+    }
+
+    .container .addItems button {
+        font-size: 17px;
+        padding: 15Px;
+    }
+
+    .showItems button {
         font-size: 18px;
+        padding: 15Px;
+        width: 145px;
+    }
+
+    .sub-container .addItems{
+       padding: 15px;
+    }
+    .showItem {
+        width: 450px;
+        margin-left: 43px; 
     }
 }
 
-@media(max-width:475px){
 
-    .container h1{
-        font-size: 40px;
+@media only screen and (max-width: 427px){
+    .container h1 {
+        font-size: 35px;
     }
-    .sub-container .addItems{
+
+    .container .addItems input {
+        width: 260px;
+        padding: 10px;
+        font-size: 12px;
+        margin-left: 4px;
+    }
+
+    .container .addItems button {
+        font-size: 14px;
+        padding: 10Px;
+    }
+
+    .showItems button {
+        font-size: 15px;
+        padding: 12Px;
+        width: 135px;
+    }
+    .container .addItems input::placeholder{
+        font-size: 15px;
+        color: gray;
+    
+    }
+
+    .sub-container .addItems {
+        padding: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
+    .showItem {
+        width: 320px;
+        margin-left: 15px;
+        font-size: 15px;
+    }
+
+    .sub-container {
+        padding: 15px;
+        margin-right: 6px;
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 378px){
+    .container h1 {
+        font-size: 30px;
+    }
+
     .container .addItems input {
-        width: 200px;
-        padding: 25px;
-        border: none;
-        outline: none;
-        border-radius: 5px;
-        font-size: 18px;
+        width: 250px;
+        padding: 11px;
+        font-size: 12px;
+    }
+
+    .showItems button {
+        font-size: 12px;
+        padding: 12Px;
+        width: 120px;
     }
 
     .container .addItems input::placeholder{
         font-size: 15px;
+        color: gray;
+    
+    }
 
+    .showItem {
+        width: 280px;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+
+    .sub-container {
+        padding: 15px;
+        margin-right: -2px;
+        width: 315px;
     }
 }
 
-@media(max-width:400px){
-
-    .container h1{
-        font-size: 20px;
-    }
-    .sub-container .addItems{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+@media only screen and (max-width: 322px){
+    .container h1 {
+        font-size: 25px;
     }
 
     .container .addItems input {
-        width: 150px;
-        padding: 15px;
-        border: none;
-        outline: none;
-        border-radius: 5px;
-        font-size: 18px;
+        width: 300px;
+        padding: 10px;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .showItems button {
+        font-size: 11px;
+        padding: 11Px;
+        width: 115px;
+    }
+
+
+    body{
+        background: linear-gradient(255deg, #f403d1, #64b5f6);
     }
 
     .container .addItems input::placeholder{
-        font-size: 10px;
-
+        font-size: 12px;
+        color: gray;
+    
     }
 
-    .container .addItems button{
-        font-size: 18px;
-        padding: 15Px;
+    .showItem {
+        width: 252px;
+        margin-left: 4px;
+        font-size: 12px;
     }
+
+    .sub-container {
+        padding: 14px;
+        margin-right: -1px;
+        width: 270px;
+    }
+
+    .container .addItems input {
+        width: 300px;
+        padding: 10px;
+        font-size: 12px;
+        margin-left: -10px;
+    }
+
 }
+
+
 
 
