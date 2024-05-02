@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { addTodo, removeTodo, deleteTodo } from '../actions/index';
 import './Todo.css';
 
 
 const Todo = () => {
-  const [inputData, setInputData] = useState('');
-  const list = useSelector((state) => state.todoReducers.list)
-  const dispatch = useDispatch();
+  const [inputData, setInputData] = useState(''); // State for input field value
+  const list = useSelector((state) => state.todoReducers.list) // Getting todo list from Redux store
+  const dispatch = useDispatch(); // Dispatch function to dispatch actions to Redux store
+
+
 
   return (
     <>
@@ -18,8 +20,6 @@ const Todo = () => {
               </div>
         
             <div className='sub-container'>
-    
-
               <div className='addItems'>
                   <input type='text' placeholder='What You Want to do..' value={inputData} onChange={(event) => setInputData(event.target.value)}/>
                   {/* <i className='fa fa-plus ' onClick={() => dispatch(addTodo(inputData) , setInputData(''))}></i> */}
